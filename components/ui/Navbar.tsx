@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
-
+import Image from 'next/image'
 import { AppBar, Badge, Box, Button, IconButton, Input, InputAdornment, Link, Toolbar, Typography } from '@mui/material';
 import { ClearOutlined, SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material';
 
@@ -27,9 +27,13 @@ export const Navbar = () => {
         <AppBar>
             <Toolbar>
                 <NextLink href='/' passHref>
-                    <Link display='flex' alignItems='center'>
-                        <Typography variant='h6'>Teslo |</Typography>
-                        <Typography sx={{ ml: 0.5 }}>Shop!</Typography>
+                    <Link display='flex' alignItems='center' mt={1}>
+                            <Image 
+                                src={`/logo1.png`}
+                                alt="Picture of the author"
+                                width={150}
+                                height={80}
+                                />
                     </Link>  
                 </NextLink>
 

@@ -29,7 +29,7 @@ export const lightTheme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor: 'white',
-          height: 60
+          height: 90
         },
       }
     },
